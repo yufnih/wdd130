@@ -1,22 +1,29 @@
+:root {
+    --main-color: #4682b4;
+    --secondary-color: #46B49C;
+    --main-font-color: black;
+    --secondary-font-color: white;
+}
+
 main {
     max-width: 840px;
 }
 nav {
-    background-color: steelblue;
+    background-color: var(--main-color);
     padding: 10px;
 }
 nav a {
-    color: white;
+    color: var(--secondary-font-color);
     display: block;
     padding: 10px;
 }
 h1 {
-    color: steelblue;
+    color: var(--main-color);
 }
 main img {
     width: 150px;
     height: auto;
-    border: 1px solid #4682b4;
+    border: 1px solid var(--main-color);
     padding: 2px;
     box-shadow: 0 0 30px gray;
 }
@@ -26,10 +33,10 @@ p {
 aside {
     width: 20em;
     margin: 2px;
-    border: 1px solid black;
+    border: 1px solid var(--main-font-color);
     padding: 1em;
-    background-color: #46B49C;
-    color: black;
+    background-color: var(--secondary-color);
+    color: var(--main-font-color);
     text-align: center;
 }
 aside img {
@@ -39,11 +46,11 @@ aside img {
 }
 footer {
     margin-top: 30px;
-    border-top: 1px solid black;
+    border-top: 1px solid var(--main-font-color);
     text-align: center;
 }
 body {
-    border: 1px solid black;
+    border: 1px solid var(--main-font-color);
 }
 
 /* Absolutely epic */
