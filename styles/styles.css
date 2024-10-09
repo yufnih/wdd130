@@ -33,8 +33,9 @@ aside {
     text-align: center;
 }
 aside img {
-    width: 200px;
+    width: 100%;
     height: auto;
+    object-fit: contain;
 }
 footer {
     margin-top: 30px;
@@ -44,3 +45,5 @@ footer {
 body {
     border: 1px solid black;
 }
+
+/* Absolutely epic */
