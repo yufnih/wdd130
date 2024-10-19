@@ -9,6 +9,30 @@
     max-width: 100%;
 }
 
+.gridbox {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    place-items: center;
+}
+
+.gridbox img {
+    width: 180px;
+    height: auto;
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+    flex-flow: row;
+}
+
+nav a {
+    display: block;
+    padding: 2em 1em 2em 2em;
+    font-size: 30px;
+}
+
 h1 {
     position: absolute;
     background-color: var(--primary-color);
@@ -24,6 +48,7 @@ h1 {
 h2 {
     border: 2px solid var(--primary-color);
     background-color: var(--accent2-color);
+    text-align: center;
 }
 
 p {
@@ -48,9 +73,32 @@ main section img {
     height: auto;
 }
 
-footer {
-    position: relative;
-    display:block;
+footer div {
+    display: grid;
+    grid-template: auto / auto auto;
+    border-top: 3px solid var(--accent1-color);
+}
+
+footer p {
+    justify-content: center;
+    align-items: center;
+}
+
+figure {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: auto auto;
+}
+
+figure image {
+    justify-content: center;
+    align-items: center;
+}
+
+figcaption {
+    grid-row: 2/3;
+    justify-content: center;
+    align-items: center;
 }
 
 .hero article img {
@@ -59,13 +107,37 @@ footer {
     height: auto;
 }
 
+
+.divbox {
+    display: grid;
+    grid-template: auto / auto auto auto;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.divbox img {
+    padding: 20px;
+}
+
+.divbox p {
+    padding: 1px 20px;
+}
+
+.sociallinks {
+    display: grid;
+    grid-template: auto / auto auto auto;
+    align-items: center;
+}
+
 .sociallinks a {
     text-decoration: none;
+    padding: 0px;
 }
 
 .sociallinks img {
-    width: 50px;
-    height: auto;
+    width: 30px;
+    height: auto;  
 }
 
 .hero {
