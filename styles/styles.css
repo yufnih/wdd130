@@ -9,23 +9,34 @@
     padding: 0;
     box-sizing: border-box;
 }
-main {
+header, .grid, footer, main {
     max-width: 840px;
+    margin: 0, auto;
+}
+main {
     margin: 1em;
     padding: 1em;
+    grid-column: 2/3;
 }
 nav {
     background-color: var(--main-color);
     padding: 10px;
+    display: flex;
+    flex-flow: row;
 }
 nav a {
     color: var(--secondary-font-color);
     display: block;
     padding: 10px;
+    font-size: large;
+    text-decoration: none;
+    font-weight: 700;
 }
 h1 {
     color: var(--main-color);
     margin-bottom: 0.5em;
+    padding-bottom: 0.5em;
+    border-bottom: 2px solid var(--main-color);
 }
 main img {
     width: 150px;
@@ -45,10 +56,14 @@ aside {
     padding: 1em;
     text-align: center;
     position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
 aside img {
     width: 200px;
     height: auto;
+    margin: 30px;
+    margin-top: 20px;
     object-fit: contain;
 }
 aside h2 {
@@ -60,7 +75,6 @@ footer {
     margin-top: 30px;
     border-top: 1px solid var(--main-font-color);
     text-align: center;
-    font-family: ;
 }
 body {
     border: 1px solid var(--main-font-color);
@@ -74,4 +88,8 @@ body {
     padding: 1em;
     background-color: var(--secondary-color);
     color: var(--main-font-color);
+}
+.grid {
+    display: grid;
+    align-items: center;
 }
