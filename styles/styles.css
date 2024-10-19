@@ -9,12 +9,13 @@
     padding: 0;
     box-sizing: border-box;
 }
-header, .grid, footer, main {
+header, .grid, footer {
     max-width: 840px;
-    margin: 0, auto;
+    margin: 0 auto;
 }
 main {
-    margin: 1em;
+    max-width: 840px;
+    margin: 0 auto;
     padding: 1em;
     grid-column: 2/3;
 }
